@@ -1,0 +1,36 @@
+services:
+  modernDistributedSystemsBackend:
+    image: moderndistributedsystemsbackend:latest
+    build: ..
+    container_name: moderndistributedsystemsbackend
+    environment:
+      - spring.datasource.url=jdbc:postgresql://localhost:5432/shoppingdb
+      - spring.datasource.username=yourusername
+      - spring.datasource.password=yourpassword
+    ports:
+      - '8080:8080'
+    networks:
+      - shopnet
+    depends_on:
+      - dbpostgres
+
+  dbpostgres:
+    container_name: dbpostgres
+    image: postgres
+    networks:
+      - shopnet
+    environment:
+      POSTGRES_USER: yourusername
+      POSTGRES_PASSWORD: yourpassword
+      POSTGRES_DB: shoppingdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:
+
+networks:
+  shopnet:
+    name: shopnet
