@@ -4,7 +4,7 @@ services:
     build: ..
     container_name: moderndistributedsystemsbackend
     environment:
-      - spring.datasource.url=jdbc:postgresql://localhost:5432/shoppingdb
+      - spring.datasource.url=jdbc:postgresql://dbpostgres:5432/shoppingdb
       - spring.datasource.username=yourusername
       - spring.datasource.password=yourpassword
     ports:
