@@ -201,7 +201,7 @@
             "id": {
               "type": "integer",
               "format": "int64",
-              "x-field-extra-annotation": "@jakarta.persistence.Id  \n  @jakarta.persistence.GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)"
+              "x-field-extra-annotation": "@jakarta.persistence.Id  \n  @jakarta.persistence.GeneratedValue(strategy = jakarta.persistence.GenerationType.AUTO)"
             }
           }
         }
