@@ -1,5 +1,9 @@
 {
   "image": "mcr.microsoft.com/devcontainers/java:1-21",
   "features": {
+    "ghcr.io/devcontainers-contrib/features/ant-sdkman:2": {},
+    "ghcr.io/devcontainers-contrib/features/kubectl-helm-minikube:1": {},
+    "docker-in-docker": "latest",
+    "github-cli": "latest"
   }
 }
