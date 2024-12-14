@@ -1,6 +1,10 @@
 #!/bin/bash
 
+docker compose -f compose/compose.yaml up -d dbpostgres
 
-docker compose -f compose/compose.yaml -p moderndistributedsystemsbackend up
+mvn clean install 
 
-docker compose/compose up -d --remove-orphans
+docker compose -f compose/compose.yaml down -d dbpostgres
+
+docker compose -f compose/compose.yaml up -d 
+#docker compose/compose up -d --remove-orphans
