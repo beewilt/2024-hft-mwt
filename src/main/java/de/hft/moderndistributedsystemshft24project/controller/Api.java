@@ -1,17 +1,14 @@
 package de.hft.moderndistributedsystemshft24project.controller;
 
 import de.hft.moderndistributedsystemshft24project.repository.ApiRepository;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.openapitools.api.ApiApi;
-import org.openapitools.api.ApiApiDelegate;
 import org.openapitools.model.ShoppingItem;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @Slf4j
