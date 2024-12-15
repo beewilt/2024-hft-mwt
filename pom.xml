@@ -156,6 +156,12 @@
 							</configOptions>
 							<generateApiTests>false</generateApiTests>
 							<generateModelTests>false</generateModelTests>
+							<packageName>de.hft.moderndistributedsystemshft24project</packageName>
+							<invokerPackage>de.hft.moderndistributedsystemshft24project</invokerPackage>
+							<apiPackage>de.hft.moderndistributedsystemshft24project</apiPackage>
+							<modelPackage>de.hft.moderndistributedsystemshft24project</modelPackage>
+
+
 						</configuration>
 					</execution>
 				</executions>
@@ -176,7 +182,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>de.hft.moderndistributedsystemshft24project.ModernDistributedSystemsHft24ProjectApplication</mainClass>
+					<mainClass>de.hft.moderndistributedsystemshft24project.OpenApiGeneratorApplication</mainClass>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
