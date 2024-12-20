@@ -6,8 +6,23 @@
     },
     "servers": [
       {
-        "url": "PUT_YOUR_SERVER_IN_HERE",
-        "description": "Generated server url"
+        "url": "{schema}://{server}:{port}",
+        "description": "Generated server url",
+        "variables": {
+          "schema": {
+            "enum": [
+              "http",
+              "https"
+            ],
+            "default": "http"
+          },
+          "server": {
+            "default": "localhost"
+          },
+          "port": {
+            "default": "8080"
+          }
+        }
       }
     ],
     "tags": [
